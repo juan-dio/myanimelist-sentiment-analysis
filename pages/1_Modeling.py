@@ -13,9 +13,10 @@ from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 
 # Download NLTK stopwords if not already downloaded
-nltk.download('stopwords', quiet=True)
-nltk.download('punkt', quiet=True)
-nltk.download('wordnet', quiet=True)
+nltk.download('stopwords')
+nltk.download('punkt')
+nltk.download('wordnet')
+nltk.download('omw-1.4')
 
 # Configure Streamlit page
 st.set_page_config(page_title="Modeling", page_icon=":bar_chart:")
