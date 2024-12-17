@@ -45,7 +45,7 @@ st.title('MyAnimeList Review Sentiment Analysis')
 st.write('## Modeling')
 
 # Load dataset
-df = load_data('./datasets/top_anime_reviews_labeled.csv')
+df = load_data('./datasets/anime_reviews_labeled.csv')
 data = df.copy()
 
 # Display dataset

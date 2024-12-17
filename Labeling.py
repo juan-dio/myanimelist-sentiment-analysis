@@ -37,7 +37,7 @@ st.title('MyAnimeList Review Sentiment Analysis')
 st.write('## Labeling')
 
 # Memuat dataset
-df = load_data('./datasets/top_anime_reviews.csv')
+df = load_data('./datasets/anime_reviews.csv')
 
 # Menampilkan dataset
 st.subheader('Dataset')
