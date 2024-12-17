@@ -17,7 +17,7 @@ nltk.download('stopwords')
 nltk.download('punkt')
 nltk.download('punkt_tab')
 nltk.download('wordnet')
-nltk.download('omw-1.4')
+# nltk.download('omw-1.4')
 
 # Configure Streamlit page
 st.set_page_config(page_title="Modeling", page_icon=":bar_chart:")
@@ -51,6 +51,12 @@ data = df.copy()
 # Display dataset
 st.subheader('Dataset')
 st.write(data)
+
+# Target distribution
+st.write("### Target Distribution")
+fig, ax = plt.subplots()
+data['sentiment'].value_counts().plot(kind='bar', ax=ax)
+st.pyplot(fig)
 
 # Preprocess text data
 data['review'] = data['review'].apply(preprocess_text)
